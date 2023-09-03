@@ -1,0 +1,18 @@
+# Magical Unicorn Generator
+
+import random
+
+def generate_magical_unicorn_name():
+    adjectives = ["Sparkling", "Enchanted", "Mystical", "Glimmering", "Radiant"]
+    colors = ["Rainbow", "Golden", "Crystal", "Amethyst", "Sapphire"]
+    animals = ["Unicorn", "Pegasus", "Dragon", "Griffin", "Phoenix"]
+
+    adjective = random.choice(adjectives)
+    color = random.choice(colors)
+    animal = random.choice(animals)
+
+    return f"The {adjective} {color} {animal}"
+
+if __name__ == "__main__":
+    unicorn_name = generate_magical_unicorn_name()
+    print(f"Behold, your magical unicorn: {unicorn_name}")
